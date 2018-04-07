@@ -15,7 +15,13 @@ Rocha's playgrond for SuiteCRM (Open source Customer Relationship Management).
 
 # curl -sSL https://raw.githubusercontent.com/bitnami/bitnami-docker-suitecrm/master/docker-compose.yml > docker-compose.yml
 
-docker-compose up -d
+# docker-compose up -d
+docker-compose up # no -d to allow debug.
+
+# Note:
+#       See fullogs.sh
+#       See https://github.com/bitnami/bitnami-docker-suitecrm/issues/24
+#       I know how to hotfix this issue, but will focus on other issues before this one (fititnt, 2018-04-07 03:25)
 
 # Open http://localhost on your browser
 
@@ -28,7 +34,8 @@ See [fulllogs.sh](fulllogs.sh).
 
 ## Screenshots
 
-<!-- ![0-docker.png](screenshots/0-docker.png) -->
+![0-docker.png](screenshots/0-docker.png)
+![1-setup(by-bitnami).png](screenshots/1-setup(by-bitnami).png)
 
 
 ## Environment

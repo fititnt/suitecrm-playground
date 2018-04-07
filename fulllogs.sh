@@ -224,3 +224,118 @@ Removing volume suitecrmplayground_mariadb_data
 Removing image bitnami/mariadb:latest
 Removing image bitnami/suitecrm:latest
 
+## Lets do it again.
+
+# fititnt at bravo in /alligo/code/fititnt/suitecrm-playground on git:master x [3:10:18]
+$ docker-compose up
+Creating network "suitecrmplayground_default" with the default driver
+Creating volume "suitecrmplayground_suitecrm_data" with local driver
+Creating volume "suitecrmplayground_mariadb_data" with local driver
+Pulling mariadb (bitnami/mariadb:latest)...
+latest: Pulling from bitnami/mariadb
+145cd17573bb: Pull complete
+2ed1164a9a3f: Pull complete
+bc4e38f76e7d: Pull complete
+0fbf84ca3889: Pull complete
+d602c64e83fd: Pull complete
+2a6af196d50c: Pull complete
+dd4d5aa887e5: Pull complete
+3655acf17db5: Pull complete
+ff1fdaf9248d: Pull complete
+39e1f242e299: Pull complete
+Digest: sha256:05db4d2ac521cd4cd23b907a5ac97469f3142d135049bfa34623c61596db9d76
+Status: Downloaded newer image for bitnami/mariadb:latest
+Pulling suitecrm (bitnami/suitecrm:latest)...
+latest: Pulling from bitnami/suitecrm
+145cd17573bb: Already exists
+2ed1164a9a3f: Already exists
+bc4e38f76e7d: Already exists
+0fbf84ca3889: Already exists
+d602c64e83fd: Already exists
+2a6af196d50c: Already exists
+dd4d5aa887e5: Already exists
+25841005b810: Pull complete
+3de09f731ada: Pull complete
+760f37e16040: Pull complete
+8d5aa699a700: Pull complete
+c0c388620fdc: Pull complete
+d985354fffdb: Pull complete
+f14374a4ce42: Pull complete
+12bdcad3e948: Pull complete
+Digest: sha256:3e71f5648e203f9c02014c21da1071a23c4588804e99c6a224206aedcbbd735b
+Creating suitecrmplayground_mariadb_1  ... done
+Creating suitecrmplayground_mariadb_1  ... 
+Creating suitecrmplayground_suitecrm_1 ... done
+Attaching to suitecrmplayground_mariadb_1, suitecrmplayground_suitecrm_1
+mariadb_1   | 
+mariadb_1   | Welcome to the Bitnami mariadb container
+mariadb_1   | Subscribe to project updates by watching https://github.com/bitnami/bitnami-docker-mariadb
+suitecrm_1  | 
+mariadb_1   | Submit issues and feature requests at https://github.com/bitnami/bitnami-docker-mariadb/issues
+suitecrm_1  | Welcome to the Bitnami suitecrm container
+suitecrm_1  | Subscribe to project updates by watching https://github.com/bitnami/bitnami-docker-suitecrm
+suitecrm_1  | Submit issues and feature requests at https://github.com/bitnami/bitnami-docker-suitecrm/issues
+mariadb_1   | Send us your feedback at containers@bitnami.com
+mariadb_1   | 
+suitecrm_1  | Send us your feedback at containers@bitnami.com
+suitecrm_1  | 
+mariadb_1   | WARN  ==> You set the environment variable ALLOW_EMPTY_PASSWORD=yes. For safety reasons, do not use this flag in a production environment.
+mariadb_1   | nami    INFO  Initializing mariadb
+mariadb_1   | mariadb INFO  ==> Cleaning data dir...
+mariadb_1   | mariadb INFO  ==> Configuring permissions...
+mariadb_1   | mariadb INFO  ==> Validating inputs...
+mariadb_1   | mariadb WARN  Allowing the "rootPassword" input to be empty
+mariadb_1   | mariadb WARN  Allowing the "password" input to be empty
+mariadb_1   | mariadb INFO  ==> Initializing database...
+suitecrm_1  | nami    INFO  Initializing apache
+suitecrm_1  | apache  INFO  ==> Patching httpoxy...
+suitecrm_1  | nami    INFO  apache successfully initialized
+suitecrm_1  | nami    INFO  Initializing php
+suitecrm_1  | nami    INFO  php successfully initialized
+suitecrm_1  | nami    INFO  Initializing mysql-client
+suitecrm_1  | nami    INFO  mysql-client successfully initialized
+suitecrm_1  | nami    INFO  Initializing suitecrm
+suitecrm_1  | suitecr INFO  Preparing webserver environment...
+mariadb_1   | mariadb INFO  ==> Creating 'root' user with unrestricted access...
+mariadb_1   | mariadb INFO  ==> Creating database bitnami_suitecrm...
+mariadb_1   | mariadb INFO  ==> Creating user bn_suitecrm...
+mariadb_1   | mariadb INFO  ==> Granting access to bn_suitecrm to the database bitnami_suitecrm...
+mariadb_1   | mariadb INFO  ==> Enabling remote connections...
+suitecrm_1  | suitecr INFO  Preparing PHP environment...
+suitecrm_1  | suitecr INFO  Preparing suitecrm environment...
+suitecrm_1  | suitecr INFO  Configuring Database...
+suitecrm_1  | mysql-c INFO  Trying to connect to MySQL server
+mariadb_1   | mariadb INFO 
+mariadb_1   | mariadb INFO  ########################################################################
+mariadb_1   | mariadb INFO   Installation parameters for mariadb:
+mariadb_1   | mariadb INFO     Root User: root
+mariadb_1   | mariadb INFO     Root Password: Not set during installation
+mariadb_1   | mariadb INFO     Database: bitnami_suitecrm
+mariadb_1   | mariadb INFO     Username: bn_suitecrm
+mariadb_1   | mariadb INFO     Password: Not set during installation
+mariadb_1   | mariadb INFO   (Passwords are not shown for security reasons)
+mariadb_1   | mariadb INFO  ########################################################################
+mariadb_1   | mariadb INFO 
+mariadb_1   | nami    INFO  mariadb successfully initialized
+mariadb_1   | INFO  ==> Starting mariadb... 
+mariadb_1   | INFO  ==> Starting mysqld_safe...
+mariadb_1   | 180407 06:11:43 mysqld_safe Logging to '/opt/bitnami/mariadb/logs/mysqld.log'.
+mariadb_1   | 180407 06:11:43 mysqld_safe Starting mysqld daemon with databases from /opt/bitnami/mariadb/data
+suitecrm_1  | mysql-c INFO  Found MySQL server listening at mariadb:3306
+suitecrm_1  | mysql-c INFO  MySQL server listening and working at mariadb:3306
+suitecrm_1  | suitecr INFO  Configuring silent installation
+suitecrm_1  | suitecr INFO  Installing suitecrm. It could take some minutes...
+suitecrm_1  | Error executing 'postInstallation': Timeout: did not get to load all resources on this page
+
+suitecrmplayground_suitecrm_1 exited with code 1
+
+# Eita nóis
+
+# fititnt at bravo in /alligo/code/fititnt/suitecrm-playground
+$ docker ps
+CONTAINER ID        IMAGE                    COMMAND                  CREATED             STATUS              PORTS               NAMES
+6bb14b13e266        bitnami/mariadb:latest   "/app-entrypoint.sh …"   4 minutes ago       Up 4 minutes        3306/tcp            suitecrmplayground_mariadb_1
+
+# It's just not me with this problem, See https://github.com/bitnami/bitnami-docker-suitecrm/issues/24
+
+# I know how to hotfix this issue, but will focus on other issues before this one
