@@ -1,5 +1,13 @@
-# suitecrm-playground
+# SuiteCRM Rocha's playgrond
 Rocha's playgrond for SuiteCRM (Open source Customer Relationship Management).
+
+- Website: https://www.suitecrm.com/
+- GitHub: https://github.com/salesagility/SuiteCRM
+- [docker-compose.yml](docker-compose.yml) based on [vendor recommendation](https://github.com/bitnami/bitnami-docker-suitecrm)
+
+----
+
+<!-- screenshot here -->
 
 ## Logbook
 
@@ -9,10 +17,18 @@ Rocha's playgrond for SuiteCRM (Open source Customer Relationship Management).
 
 docker-compose up -d
 
+# Open http://localhost on your browser
+
+## Stop and clean all resources (DO NOT RUN `docker-compose down --volumes --rmi all` ON PRODUCTION)
+docker-compose down --volumes --rmi all
 
 ```
 
 See [fulllogs.sh](fulllogs.sh).
+
+## Screenshots
+
+<!-- ![0-docker.png](screenshots/0-docker.png) -->
 
 
 ## Environment
